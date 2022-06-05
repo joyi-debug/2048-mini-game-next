@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="action-panel">
+    <button size="mini" bindtap="onClearCanvas">清空画布</button>
+  </view>
+  <view class="action-panel">
+    <button size="mini" bindtap="onDrawRect">画矩形</button>
+    <button size="mini" bindtap="onFillRect">填充矩形</button>
+    <button size="mini" bindtap="onClearRect">清空矩形</button>
+  </view>
+  <view class="action-panel">
+    <button size="mini" bindtap="onDrawTriangle">三角形</button>
+    <button size="mini" bindtap="onDrawArc">arc</button>
+    <button size="mini" bindtap="onDrawRoundedRect">圆角矩形</button>
+  </view>
+  <view class="action-panel">
+    <button size="mini" bindtap="onDrawSimpleAnimation">简单动画</button>
+  </view>
+  <!-- <canvas class="canvas" canvas-id="canvas" /> -->
+  <!-- 用于绘制动画的canvas -->
+  <!--   <view class="game-board"> -->
+  <canvas type="2d" id="canvas-animation" class="canvas">bbb
+  </canvas>
+  <!--   </view> -->
+</view>
+
+

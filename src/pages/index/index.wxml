@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 上方游戏基础信息 -->
+  <view class="game-info-panel">
+    <!-- 左侧2048 logo -->
+    <view class="logo-cell">2048</view>
+    <!-- 当前分数展示 -->
+    <view class="score-info">
+      <text class="title">分数</text>
+      <text class="score">{{currentScore}}</text>
+    </view>
+    <!-- 历史分数展示 -->
+    <view class="score-info">
+      <text class="title">最高分</text>
+      <text class="score">{{heighestScore}}</text>
+    </view>
+  </view>
+  <!-- 游戏棋盘 -->
+  <view
+    class="game-board"
+    bindtouchstart="onTouchStart"
+    bindtouchmove="onTouchMove"
+    bindtouchend="onTouchEnd"
+  >
+    <canvas type="2d" id="canvas" height="300" />
+  </view>
+  <!-- 下方操作按钮 -->
+  <view class="action-panel">
+    <view class="start-new-game" bindtap="onStartNewGame">New Game!</view>
+  </view>
+</view>
+
+
